@@ -1,0 +1,39 @@
+{
+  "name": "yt-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "engines": {
+    "node": ">= 18.12 <19"
+  },
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "figlet": "^1.5.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "inquirer": "^9.2.12",
+    "util": "^0.12.4",
+    "ytdl-core": "^4.11.5",
+    "ytpl": "^2.3.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.5",
+    "@types/figlet": "^1.5.8",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-function-name": "^2.0.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
